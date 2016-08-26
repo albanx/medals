@@ -5,10 +5,12 @@ import { FormsModule, FormBuilder } from '@angular/forms';
 import { HttpModule, Http } from '@angular/http';
 import { AppComponent } from './app.component';
 import { DataService } from './data.service';
+import {FilterPipe} from "./filter.pipe";
 
 @NgModule({
     declarations: [
-        AppComponent
+        AppComponent,
+        FilterPipe
     ],
     imports: [
         BrowserModule,

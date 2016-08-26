@@ -1,0 +1,33 @@
+<h2 class="sub-header">Medals per Country</h2>
+<input type="text" class="form-control" #filter (keyup)="0" placeholder="Search for a country...">
+<div  *ngIf="!loading" class="table-responsive">
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>#</th>
+            <th>Country</th>
+            <th>Gold</th>
+            <th>Silver</th>
+            <th>Bronze</th>
+            <th>Total</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let medal of medals | filterResults:filter.value; let i = index">
+            <td>{{i + 1}}</td>
+            <td>{{medal.country}}</td>
+            <td>{{medal.Gold}}</td>
+            <td>{{medal.Silver}}</td>
+            <td>{{medal.Bronze}}</td>
+            <td>{{medal.Total}}</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<div *ngIf="loading" class='uil-rolling-css' style='transform:scale(0.6);'>
+    <div>
+        <div></div>
+        <div></div>
+    </div>
+</div>
