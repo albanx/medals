@@ -8,6 +8,8 @@ The final provided package contains 2 folders, 1 file:
 - medals containing all the sources, Angular 2, CSS, TypeScript
 - questions.md are the replies to the test questions
 
+Demo at http://www.albanx.com/medals
+
 ## Frameworks and libraries
 This project makes use of the following frameworks and libraries:
 - Angular 2 on the front end with TypeScript
